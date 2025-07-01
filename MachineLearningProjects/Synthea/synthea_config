@@ -1,8 +1,9 @@
 {
-  "base_url": "https://raw.githubusercontent.com/Nicholas26-design/PorfolioProjects/main/Synthea/Data",
+  "base_url": "https://raw.githubusercontent.com/Nicholas26-design/PorfolioProjects/main/MachineLearningProjects/Synthea/Data",
   "files": [
 
     "Synthetic ML Encounter Data.csv",
     "Synthetic ML Patient Data.csv"
   ]
 }
+
