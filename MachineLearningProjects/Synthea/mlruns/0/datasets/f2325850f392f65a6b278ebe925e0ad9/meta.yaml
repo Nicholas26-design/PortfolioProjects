@@ -1,0 +1,7 @@
+digest: 245ae332
+name: dataset
+profile: '{"num_rows": 515, "num_elements": 3605}'
+schema: null
+source: '{"tags": {"mlflow.user": "Nicholas", "mlflow.source.name": "C:\\Users\\Nicholas\\AppData\\Roaming\\Python\\Python39\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code
