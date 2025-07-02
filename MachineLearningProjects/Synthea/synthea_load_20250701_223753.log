@@ -1,0 +1,86 @@
+2025-07-01 22:41:17,437 - KeyboardInterrupt while sending command.
+Traceback (most recent call last):
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+2025-07-01 22:41:17,517 - Search for sockets that match local addr ('127.0.0.1', 53974) and remote addr ('127.0.0.1', 53973)
+2025-07-01 22:41:17,517 - Shutting down matched socket <socket.socket fd=5652, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53975), raddr=('127.0.0.1', 53973)>
+2025-07-01 22:41:17,526 - Close connection stream
+2025-07-01 22:41:17,526 - Send shutdown request for the Java socket 127.0.0.1, remote port 53974, local port 53973
+2025-07-01 22:41:17,526 - Close connection
+2025-07-01 22:41:17,533 - Closing down clientserver connection
+2025-07-01 22:41:17,535 - Connection is closed
+2025-07-01 22:41:17,535 - Finished shutdown of socket None
+2025-07-01 22:41:17,535 - Shutting down the current connection <py4j.clientserver.ClientServerConnection object at 0x000002A8348E3B20>
+2025-07-01 22:41:17,535 - Close connection stream
+2025-07-01 22:41:17,542 - Send shutdown request for the Java socket 127.0.0.1, remote port 53974, local port 53973
+2025-07-01 22:41:17,545 - Exception occurred while shutting down connection
+Traceback (most recent call last):
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\clientserver.py", line 504, in shutdown_socket
+    self.socket.sendall(("%s\n" % address).encode("utf-8"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-07-01 22:41:17,549 - Error while sending or receiving.
+Traceback (most recent call last):
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\pyspark\sql\classic\dataframe.py", line 443, in collect
+    sock_info = self._jdf.collectToPython()
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\java_gateway.py", line 1361, in __call__
+    answer = self.gateway_client.send_command(command)
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\clientserver.py", line 527, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-07-01 22:41:17,555 - Closing down clientserver connection
+2025-07-01 22:41:17,557 - Exception while sending command.
+Traceback (most recent call last):
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\pyspark\sql\classic\dataframe.py", line 443, in collect
+    sock_info = self._jdf.collectToPython()
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\java_gateway.py", line 1361, in __call__
+    answer = self.gateway_client.send_command(command)
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\clientserver.py", line 527, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "c:\Users\Nicholas\AppData\Local\Programs\Python\Python39\lib\site-packages\py4j\clientserver.py", line 530, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
