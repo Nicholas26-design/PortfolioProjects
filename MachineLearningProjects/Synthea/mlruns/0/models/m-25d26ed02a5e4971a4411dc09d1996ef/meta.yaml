@@ -1,0 +1,10 @@
+artifact_location: file:///c:/Users/Nicholas/Documents/GitHub/PortfolioProjects/MachineLearningProjects/Synthea/mlruns/0/models/m-25d26ed02a5e4971a4411dc09d1996ef/artifacts
+creation_timestamp: 1751568775246
+experiment_id: '0'
+last_updated_timestamp: 1751568778513
+model_id: m-25d26ed02a5e4971a4411dc09d1996ef
+model_type: null
+name: model
+source_run_id: 0b0569469c6e4c22b37eebe580242bff
+status: 2
+status_message: null
