@@ -6,7 +6,6 @@ This project aims to predict whether a patient will be readmitted to the hospita
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Models](#models)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -41,4 +40,29 @@ The following models were explored:
 - Random Forest
 - Gradient Boosted Trees
 
+## Usage
+1. Clone the repository.
+2. Install required dependencies using `pip install -r requirements.txt`.
+3. Run the main script:  
+   `Predicting Patient Readmission in 30 Days Standard.ipynb`
+4. Adjust configuration files as needed for custom data paths or parameters.
+
+## Features
+- Predicts 30-day hospital readmission.
+- Utilizes multiple machine learning models.
+- Supports both CSV and Databricks Hive Metastore data sources.
+- Modular and extensible codebase.
+
+## Technologies Used
+- Python 3.x
+- scikit-learn
+- pandas
+- numpy
+- Synthea (for synthetic data generation)
+- Databricks (optional)
+
+## Results
+- Achieved accuracy, precision, recall, and F1-score metrics for each model.
+- Random Forest performed best with an F1-score of XX (replace with your result).
+- ROC curves and confusion matrices are available in the `results/` directory.
 
