@@ -41,8 +41,4 @@ The following models were explored:
 - Random Forest
 - Gradient Boosted Trees
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/project-name.git
 
