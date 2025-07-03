@@ -63,6 +63,5 @@ The following models were explored:
 
 ## Results
 - Achieved accuracy, precision, recall, and F1-score metrics for each model.
-- Random Forest performed best with an F1-score of XX (replace with your result).
 - ROC curves and confusion matrices are available in the `results/` directory.
 

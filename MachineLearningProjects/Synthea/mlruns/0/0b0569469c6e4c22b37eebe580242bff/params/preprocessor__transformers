@@ -1,2 +1,0 @@
-[('num', Pipeline(steps=[('imputer', SimpleImputer()), ('scaler', StandardScaler())]), ['encounter_type_code', 'duration_days', 'age']), ('cat', Pipeline(steps=[('imputer', SimpleImputer(strategy='most_frequent')),
-                ('onehot', OneHotEncoder(handle_unknown='ignore'))]), ['status', 'encounter_type_text', 'gender', 'marital_status'])]
