@@ -1,0 +1,12 @@
+digest: 64ebf973
+name: dataset
+profile: '{"num_rows": 280, "num_elements": 1960}'
+schema: '{"mlflow_colspec": [{"type": "string", "name": "status", "required": true},
+  {"type": "long", "name": "encounter_type_code", "required": true}, {"type": "string",
+  "name": "encounter_type_text", "required": true}, {"type": "long", "name": "duration_days",
+  "required": true}, {"type": "string", "name": "gender", "required": true}, {"type":
+  "string", "name": "marital_status", "required": true}, {"type": "double", "name":
+  "age", "required": true}]}'
+source: '{"tags": {"mlflow.user": "Nicholas", "mlflow.source.name": "C:\\Users\\Nicholas\\AppData\\Roaming\\Python\\Python39\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code
