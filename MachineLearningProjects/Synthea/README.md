@@ -31,8 +31,7 @@ The dataset is sourced from synthetic healthcare data generated using [Synthea](
 - Conditions, claims, procedures, and observations
 
 ### Data Sources:
-- CSV files located in `c:/Users/Nicholas/Documents/GitHub/PorfolioProjects/Synthea/Data/`
-- Optionally, data can be loaded from Databricks Hive Metastore.
+- path to CSV files located in synthea_config file.
 
 ## Models
 The following models were explored:
@@ -44,13 +43,13 @@ The following models were explored:
 1. Clone the repository.
 2. Install required dependencies using `pip install -r requirements.txt`.
 3. Run the main script:  
-   `Predicting Patient Readmission in 30 Days Standard.ipynb`
+   `Predicting Patient Readmission in 30 Days Prod.ipynb`
 4. Adjust configuration files as needed for custom data paths or parameters.
 
 ## Features
 - Predicts 30-day hospital readmission.
-- Utilizes multiple machine learning models.
-- Supports both CSV and Databricks Hive Metastore data sources.
+- Explores multiple machine learning models.
+- Supports parameterized data sources.
 - Modular and extensible codebase.
 
 ## Technologies Used
