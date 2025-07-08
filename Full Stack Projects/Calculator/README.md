@@ -1,21 +1,47 @@
-Building a calculator app for a local desktop using Python:
+# Simple Calculator
 
-1. Back-End (Python Logic):
+A desktop calculator application built with Python and Tkinter. This project demonstrates the fundamentals of GUI development, event-driven programming, and arithmetic logic in Python.
 
-Python will handle the core functionality of the calculator—performing arithmetic operations. 
+## Features
 
- Defined functions to handle basic operations like addition, subtraction, multiplication, and division.
+- **Basic Arithmetic:** Supports addition, subtraction, multiplication, and division.
+- **Intuitive Interface:** Clean and simple GUI using Tkinter.
+- **Live Expression Display:** Shows the current calculation as you type.
+- **Error Handling:** Displays an error message for invalid expressions.
 
-2. Front-End (User Interface):
+## Getting Started
 
-Since this is a desktop app, I need a GUI framework.
+### Prerequisites
 
-	•	Tkinter (built into Python): The default Python GUI library for simple applications.
-	
+- Python 3.x
 
-5. Packaging the App:
+Tkinter is included with most Python installations. If not, install it via your package manager.
 
-Once the app is built, you can package it into an executable file using tools like:
+### Running the Application
 
-	•	PyInstaller: Converts Python scripts into standalone executables for Windows, macOS, and Linux.
-	
+1. Clone this repository or download the source code.
+2. Run the calculator:
+
+   ```sh
+   python Final Version.py
+   ```
+
+## Project Structure
+
+- `Final Version.py` – Main calculator application (Tkinter GUI).
+- `README.md` – Project documentation.
+
+## Usage
+
+- Click the number and operator buttons to build your expression.
+- Press `=` to evaluate.
+- Press `Clear` to reset the input.
+
+## License
+
+This project is provided for educational purposes.
+
+## Author
+
+Nicholas Kenney  
+[nickenney13@gmail.com](mailto:nickenney13@gmail.com)
