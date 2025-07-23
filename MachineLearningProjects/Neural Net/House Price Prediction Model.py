@@ -164,6 +164,10 @@ df_housing = df_engineered[selected_cols]
 # Drop rows with missing values
 df_housing = df_housing.dropna()
 
+# Scale numerical features
+df_housing['MedianIncome'] = df_housing['MedianIncome'] / 10000
+df_housing['MedHouseVal'] = df_housing['MedHouseVal'] / 100000
+
 # Split into features (X) and target (y)
 X = df_housing[features_to_keep]
 y = df_housing[target_col]
@@ -171,21 +175,24 @@ y = df_housing[target_col]
 """
 Preprocessing
 Step 1: Encode any categorical variables
-Step 2: Scale features
 """
 
-# # Check column types
-# print(df_engineered.dtypes)
+# Define categorical and numeric columns
 
-# # Look for object or categorical columns
-# categorical_cols = df_engineered.select_dtypes(include=['object', 'category']).columns
-# print("Categorical columns:", list(categorical_cols))
+# Check column types
+print(df_housing.dtypes)
 
-# # One-hot encode them
-# df_encoded = pd.get_dummies(df_engineered, columns=categorical_cols, drop_first=True)
-# # Scale numerical features
-# df_encoded['MedianIncome'] = df_encoded['MedianIncome'] / 10000
-# df_encoded['MedHouseVal'] = df_encoded['MedHouseVal'] / 100000
+# Look for object or categorical columns
+categorical_cols = df_housing.select_dtypes(include=['object', 'category']).columns
+print("Categorical columns:", list(categorical_cols))
+# Look for numeric columns
+numeric_cols = df_housing.select_dtypes(include=['number']).columns
+print("Numeric columns:", list(numeric_cols))
+
+# One-hot encode them
+df_encoded = pd.get_dummies(df_housing, columns=categorical_cols, drop_first=True, dtype=float)
+
+
 
 """
 Modeling
