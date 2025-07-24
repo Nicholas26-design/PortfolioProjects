@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Nicholas/Documents/GitHub/PortfolioProjects/mlruns/0/277f6bfe599944ea96cd0129d1b7a4e7/artifacts
+end_time: 1753378250824
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 277f6bfe599944ea96cd0129d1b7a4e7
+run_name: clean-bug-267
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753378244822
+status: 3
+tags: []
+user_id: Nicholas

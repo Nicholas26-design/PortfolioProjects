@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Nicholas/Documents/GitHub/PortfolioProjects/mlruns/0/a32190128bf9434ea7b09c006ee747aa/artifacts
+end_time: 1753378254288
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a32190128bf9434ea7b09c006ee747aa
+run_name: bald-wasp-298
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753378250824
+status: 3
+tags: []
+user_id: Nicholas

@@ -265,6 +265,7 @@ n_layers = 4
 layer_sizes = [base // (2**i) for i in range(n_layers)]
 print(f"Layer sizes: {layer_sizes}")
 
+# Build the neural network model
 def build_neural_network(input_shape):
     model = keras.Sequential([
         # Input layer is implicit
@@ -293,6 +294,8 @@ def build_neural_network(input_shape):
         metrics=['mae']
     )
     return model
+
+model = build_neural_network(X_train_df.shape[1])
 
 # Step 3: Model Evaluation
 

@@ -1,0 +1,11 @@
+digest: 31c0785c
+name: dataset
+profile: '{"num_rows": 12382, "num_elements": 61910}'
+schema: '{"mlflow_colspec": [{"type": "string", "name": "IncomeCategory", "required":
+  true}, {"type": "string", "name": "HouseAgeCategory", "required": true}, {"type":
+  "string", "name": "City", "required": true}, {"type": "string", "name": "State",
+  "required": true}, {"type": "string", "name": "County", "required": true}]}'
+source: '{"tags": {"mlflow.user": "Nicholas", "mlflow.source.name": "c:/Users/Nicholas/Documents/GitHub/PortfolioProjects/MachineLearningProjects/Neural
+  Net/House Price Prediction Model.py", "mlflow.source.type": "LOCAL", "mlflow.source.git.commit":
+  "61e8d08640826444aa95b6e62d66dbb52786026b"}}'
+source_type: code

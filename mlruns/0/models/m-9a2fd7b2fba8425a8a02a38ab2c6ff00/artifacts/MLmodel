@@ -1,0 +1,24 @@
+artifact_path: file:///C:/Users/Nicholas/Documents/GitHub/PortfolioProjects/mlruns/0/models/m-9a2fd7b2fba8425a8a02a38ab2c6ff00/artifacts
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.1.1
+model_id: m-9a2fd7b2fba8425a8a02a38ab2c6ff00
+model_size_bytes: 1208
+model_uuid: m-9a2fd7b2fba8425a8a02a38ab2c6ff00
+prompts: null
+run_id: a32190128bf9434ea7b09c006ee747aa
+signature:
+  inputs: '[{"type": "string", "name": "IncomeCategory", "required": true}, {"type":
+    "string", "name": "HouseAgeCategory", "required": true}, {"type": "string", "name":
+    "City", "required": true}, {"type": "string", "name": "State", "required": true},
+    {"type": "string", "name": "County", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1,
+    9]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-07-24 17:30:51.201147'
