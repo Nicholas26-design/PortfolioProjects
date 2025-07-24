@@ -192,7 +192,49 @@ print("Numeric columns:", list(numeric_cols))
 # One-hot encode them
 df_encoded = pd.get_dummies(df_housing, columns=categorical_cols, drop_first=True, dtype=float)
 
+"""
+Second Possible Preprocessing Method
+"""
 
+# Define categorical and numeric columns
+
+# Check column types
+print(df_housing.dtypes)
+
+# Look for object or categorical columns
+categorical_cols = df_housing.select_dtypes(include=['object', 'category']).columns
+print("Categorical columns:", list(categorical_cols))
+# Look for numeric columns
+numeric_cols = df_housing.select_dtypes(include=['number']).columns
+print("Numeric columns:", list(numeric_cols))
+
+# Preprocessing pipeline
+preprocessor = ColumnTransformer(
+    transformers=[
+        (
+            "num",
+            Pipeline(
+                [
+                    ("imputer", SimpleImputer(strategy="mean")),
+                    ("scaler", StandardScaler()),
+                ]
+            ),
+            numeric_cols,
+        ),
+        (
+            "cat",
+            Pipeline(
+                [
+                    ("imputer", SimpleImputer(strategy="most_frequent")),
+                    ("onehot", OneHotEncoder(handle_unknown="ignore")),
+                ]
+            ),
+            categorical_cols,
+        ),
+    ]
+)
+
+# Now X and y are ready to be used in a model pipeline
 
 """
 Modeling
