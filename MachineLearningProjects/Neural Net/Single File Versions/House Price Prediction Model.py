@@ -36,6 +36,9 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow import keras
+import reverse_geocoder as rg
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+import seaborn as sns
 
 print("TensorFlow version:", tf.__version__)
 
@@ -88,7 +91,7 @@ df_clean.head()
 Exploratory Data Analysis (EDA)
 """
 
-import reverse_geocoder as rg
+
 # Assuming df_clean is a DataFrame with 'Latitude' and 'Longitude' columns
 # Convert to list of tuples
 coords = list(zip(df_clean['Latitude'], df_clean['Longitude']))
@@ -102,7 +105,7 @@ df = pd.concat([df_clean, results_df], axis=1)
 
 print(df)
 # Visualize the data
-import seaborn as sns
+
 sns.scatterplot(data=df, x="Longitude", y="Latitude", hue="MedHouseVal", palette="viridis")
 # Visualize the correlation matrix
 sns.heatmap(df_clean.corr(), annot=True, cmap="coolwarm")
@@ -299,7 +302,7 @@ model = build_neural_network(X_train_df.shape[1])
 
 # Step 3: Model Evaluation
 
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+
 
 def evaluate_model(y_true, y_pred):
     mse = mean_squared_error(y_true, y_pred)
